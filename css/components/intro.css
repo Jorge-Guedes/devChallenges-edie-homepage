@@ -1,0 +1,49 @@
+/* ====== INTRO ====== */
+.intro {
+    margin-bottom: clamp(10rem, 20vw, 20rem);
+    top: calc(var(--header-height) + 2rem);
+}
+
+.intro-history, 
+.intro-content {
+    max-width: 89.7rem;
+    margin-inline: auto;
+    padding-inline: 4rem;
+}
+
+.intro .intro-history span {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    color: var(--p);
+    margin-bottom: clamp(.1rem, 1.2vw, 1.6rem); 
+}
+
+.intro .banner {
+    padding-left: clamp(1rem, 5vw, 5.2rem);
+    padding-right: clamp(1.7rem, 5vw, 5.2rem);
+    margin-top: clamp(1.5rem, 4vw, 4.2rem);
+    margin-bottom: clamp(2.2rem, 4vw, 4.2rem);
+}
+
+.intro .banner img {
+    border-radius: 1.8rem;
+    object-fit: cover;
+    object-position: center;
+    min-height: 14.5rem;
+}
+
+.intro-content .title {
+    margin-bottom: clamp(2rem, 4vw, 3.2rem);
+}
+
+.intro-content .desc {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    margin-bottom: clamp(3.1rem, 6vw, 4.2rem);
+    max-width: clamp(27.5rem, 36ch, 36.6rem);
+}
+
+@media (max-width: 250px) {
+    .intro-history, 
+    .intro-content {
+    padding-inline: 1rem;
+    }
+}

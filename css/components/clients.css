@@ -1,0 +1,98 @@
+/* ====== CLIENTS ====== */
+#clients {
+    padding-inline: 1rem;
+    padding-right: 1.4rem;
+    max-width: 111rem;
+    margin-inline: auto;
+    display: grid;
+    margin-bottom: clamp(10rem, 20%, 19rem);
+}
+#clients .clients-content span {
+    display: block;
+    font-size: 1.8rem;
+    color: #EB5757;
+    margin-bottom: .7rem;
+}
+#clients .clients-content .subtitle {
+    margin-bottom: 1.4rem;
+}
+#clients .clients-content p {
+    font-size: 1.6rem;
+    color: var(--c2);
+    max-width: 27.3rem;
+}
+
+#clients .clients-image {
+    margin-top: 3.6rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, fill-content);
+}
+#clients .clients-image img {
+    border-radius: 2.4rem;
+}
+#clients .clients-image .image:nth-child(3) {
+    order: -1;
+    grid-row: span 2;
+    align-self: center;
+}
+
+#clients .clients-reference {
+    margin-top: clamp(10rem, 20%, 19.6rem);
+}
+
+#clients .clients-reference .desc-reference {
+    display: block;
+    max-width: clamp(35.1rem, 75vw, 93.7rem);
+    margin-bottom: clamp(2.4rem, 3.5vw, 3.6rem);
+}
+
+#clients .clients-reference .client {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+}
+
+#clients .clients-reference .client .img-client img {
+    width: 8.2rem;
+    object-fit: cover;
+    border-radius: 1.2rem;
+}
+
+#clients .clients-reference .client .info-name {
+    font-size: 2.4rem;
+    color: var(--c1);
+}
+#clients .clients-reference .client .info-office {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--c3);
+    margin-bottom: 1.2rem;
+}
+
+@media (min-width: 700px) {
+    #clients {
+        grid-template-columns: 1fr 2fr;
+        justify-content: space-between;
+    }
+    .clients-image {
+        width: 100%;
+        margin-top: 0;
+        justify-self: baseline;
+    }   
+    #clients .clients-reference {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 250px) {
+    #clients .clients-image {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    #clients .clients-image img {
+        max-width: 90%;
+    }
+}

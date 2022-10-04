@@ -1,0 +1,83 @@
+/* ====== FOOTER ====== */
+.footer-bg {
+    background: var(--p2);
+    color: var(--w);
+}
+
+.footer {
+    padding-top: clamp(3.6rem, 4vw, 4.6rem);
+    padding-inline: 4.1rem;
+    display: flex;
+    gap: 6.4rem;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: calc(111rem + 8.2rem);
+    margin-inline: auto;
+    margin-bottom: 11.8rem;
+}
+
+.footer .footer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.footer .footer-menu a {
+   transition: .3s ease;
+   padding-block: .5rem;
+}
+.footer .footer-menu a:hover,
+.footer .footer-menu a:focus {
+    color: var(--p);
+}
+
+.footer .social .logo {
+    font-size: clamp(2.4rem, 10vw, 3.6rem);
+    color: var(--w);
+    font-style: normal;
+}
+
+.footer .social-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer .form .input input:active,
+.footer .form .input input:focus {
+    background: var(--c6);
+} 
+
+.footer-bg .copy {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1rem, 6vw, 1.4rem);
+    font-weight: 500;
+    display: block;
+    text-align: center;
+    max-width: 95%;
+    margin-inline: auto;
+    padding-bottom: 2.4rem;
+}
+
+.footer-bg .copy a {
+    font-weight: 700;
+    text-decoration: underline;
+    transition: .3s ease;
+}
+
+.footer-bg .copy a:hover,
+.footer-bg .copy a:focus {
+    color: var(--p);
+}
+
+@media (min-width: 700px) {
+    .footer {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 250px)  {
+    .footer {
+        padding-inline: 1.6rem;
+        gap: 3rem;
+    }
+}
