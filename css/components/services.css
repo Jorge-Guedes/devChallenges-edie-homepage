@@ -14,7 +14,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 4rem .5rem;
+    gap: 4rem 0;
     padding-inline: 1.5rem;
     padding-right: 1.9rem;
 }
